@@ -1,4 +1,4 @@
-# Device Tree for 8T (kebab) for TWRP
+# Device Tree for 9R (lemonades) for TWRP
 ## Disclaimer - Unofficial TWRP!
 These are personal test builds of mine. In no way do I hold responsibility if it/you messes up your device.
 Proceed at your own risk.
@@ -25,7 +25,7 @@ and then paste the following
 	fetch="https://github.com/" />
 
 <project path="device/oneplus/kebab"
-	name="theincognito/android_device_oneplus_kebab"
+	name="Blaster4385/android_device_oneplus_lemonades"
 	remote="github"
 	revision="android-11" />
 </manifest>
@@ -41,24 +41,25 @@ repo sync -j$(nproc --all)
 To build, execute these commands in order
 
 ```
-. build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; export LC_ALL=C; lunch aosp_kebab-eng; make -j$(nproc --all) adbd recoveryimage
+. build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; export LC_ALL=C; lunch aosp_lemonades-eng; make -j$(nproc --all) adbd recoveryimage
 ```
 
 To test it:
 
 ```
 # To temporarily boot it
-fastboot boot out/target/product/kebab/recovery.img 
+fastboot boot out/target/product/lemonades/recovery.img 
 
 # Since 8T has a separate recovery partition, you can flash the recovery with
 fastboot flash recovery recovery.img
 ```
 
-Kernel: https://github.com/AOSPA/android_kernel_oneplus_sm8250
+Kernel: https://github.com/Blaster4385/IllusionX_sm8250
 
 ##### Credits
 - bigbiff for decryption
 - Systemad for original tree
 - CaptainThrowback for original tree
 - mauronofrio for original tree
+- theincognito for his tree
 - TWRP team

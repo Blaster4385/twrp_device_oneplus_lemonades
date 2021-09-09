@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/oneplus/kebab
+DEVICE_PATH := device/oneplus/lemonades
 
 # Architecture
 TARGET_ARCH := arm64
@@ -70,8 +70,8 @@ BOARD_RAMDISK_OFFSET       := 0x01000000
 BOARD_DTB_OFFSET           := 0x01f00000
 TARGET_KERNEL_ARCH := arm64
 TARGET_NO_KERNEL := false
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/boot.img-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/boot.img-kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
