@@ -4,7 +4,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Inherit from virtual AB OTA config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-LOCAL_PATH := device/oneplus/kebab
+LOCAL_PATH := device/oneplus/lemonades
 
 # define hardware platform
 PRODUCT_PLATFORM := kona
@@ -88,5 +88,5 @@ PRODUCT_COPY_FILES += \
 
 #TWRP
 PRODUCT_COPY_FILES += \
-    device/oneplus/kebab/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
-    device/oneplus/kebab/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \
+    device/oneplus/lemonades/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
+    device/oneplus/lemonades/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \
